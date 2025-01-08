@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Interviws</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/tab_footer_icon.png" type="image/x-icon">
+
+        <style>
+            @import url(../css/interviews.css);
+            @import url(../css/course.css);
+            @import url(../css/sidemenu.css);
+            @import url(../css/footer.css);
+        </style>
+        <script src="https://kit.fontawesome.com/8b4c251657.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <script src="../js/sidemenu.js"></script>
+
+
+
+
+        <div class="course-container">
+            <div class="course-playlist">
+                <h2>Interviews Playlist</h2>
+                <div id="playlist">
+                </div>
+            </div>
+
+            <div class="course-video">
+                <h3 id="courseName"></h3>
+                <iframe id="videoPlayer" width="800" height="450" src="https://www.youtube.com/embed/2EAV2cB3FWY"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="course-desc-container">
+                    <h2 id="videoTitle">المقدمة</h2>
+                    <div class="course-info">
+                        <p id="videoDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/footer.js"></script>
+
+        <script src="../js/courseScript.js"></script>
+        <script src="../js/interviews.js"></script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0px";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-250px";
+            }
+
+        </script>
+        <script>
+            function openmenu() {
+                document.getElementById("sidemenu").classList.add("active");
+            }
+
+            function closemenu() {
+                document.getElementById("sidemenu").classList.remove("active");
+            }
+        </script>
+
+        <script src="../js/scrollingControl.js"></script>
+
+        <script>
+
+            document.querySelectorAll('.video-item h4').forEach(item => {
+                item.addEventListener('click', () => {
+                    // Remove blue color from all <h4> elements
+                    document.querySelectorAll('.video-item h4').forEach(el => el.style.color = '');
+
+                    // Add blue color to the clicked element
+                    item.style.color = 'blue';
+                });
+            });
+        </script>
+
+    </body>
+
+
+</html>
