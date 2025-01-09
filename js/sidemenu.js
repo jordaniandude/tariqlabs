@@ -12,7 +12,7 @@ nav.innerHTML = `
         </div>
     </div>
     <ul id="sidemenu" class="menu-closed">
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/html/courses.html">Courses</a></li>
         <li><a href="/html/allInterviews.html">Coding Interviews</a></li>
         <li><a href="/html/poadcast.html">Podcast</a></li>
