@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Questrial', serif;
-  }
+}
 
 /* ///////////////////////// */
 .line {
@@ -93,7 +93,7 @@ body {
 }
 
 .logo img {
-    content: var(--logo-image);
+    /* content: var(--logo-image); */
     max-width: 100%;
     height: auto;
     width: 150px;
@@ -429,7 +429,9 @@ nav .fa-solid {
 
 /* Hero Section */
 .hero {
-    padding-right: 10px;
+    /* padding-right: 10px; */
+    padding-right: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;

@@ -49,6 +49,7 @@ function displayCourseDetails(course) {
 
 function populatePlaylist(data) {
     const playlistElement = document.getElementById('playlist');
+    let firstVideoSet = false;
     data.forEach(section => {
         const sectionItem = document.createElement('div');
         sectionItem.classList.add('section-item');
@@ -68,12 +69,24 @@ function populatePlaylist(data) {
         lecturesList.classList.add('lectures');
         lecturesList.style.display = 'none';
 
-        section.sections.forEach(lecture => {
+        // section.sections.forEach(lecture => {
+        //     const lectureItem = document.createElement('li');
+        //     lectureItem.innerText = lecture.title;
+        //     lectureItem.setAttribute('data-link', lecture.link);
+        //     lectureItem.onclick = () => updateVideo(lecture.link, lecture.title, " ");
+        //     lecturesList.appendChild(lectureItem);
+        // });
+        section.sections.forEach((lecture, index) => {
             const lectureItem = document.createElement('li');
             lectureItem.innerText = lecture.title;
             lectureItem.setAttribute('data-link', lecture.link);
             lectureItem.onclick = () => updateVideo(lecture.link, lecture.title, " ");
             lecturesList.appendChild(lectureItem);
+
+            if (!firstVideoSet && index === 0) {
+                updateVideo(lecture.link, lecture.title, " ");
+                firstVideoSet = true;
+            }
         });
 
         sectionItem.appendChild(sectionHeader);
