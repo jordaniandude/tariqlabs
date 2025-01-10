@@ -4,7 +4,7 @@ const footer = document.createElement('footer');
 footer.innerHTML = `
     <div class="footer-container">
         <div class="footer-brand">
-            <img src="../images/tab_footer_icon.png" alt="tariq photo">
+            <img src="/tariqlabs/images/tab_footer_icon.png" alt="tariq photo">
             <p>Tariq Elouzeh, Senior Software Engineer at Apple, Interviews Coach, Coding Instructor and Content Creator.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn"></a>
