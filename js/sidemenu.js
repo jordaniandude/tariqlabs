@@ -4,7 +4,7 @@ nav.innerHTML = `
 <nav>
     <div class="logo-menu">
         <div class="logo">
-            <img src="../images/logo-light.png" alt="Logo">
+            <img src="/tariqlabs/images/logo-light.png" alt="Logo">
         </div>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
