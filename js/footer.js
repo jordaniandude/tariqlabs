@@ -26,7 +26,7 @@ footer.innerHTML = `
             <div>
                 <h4>Courses</h4>
                 <ul>
-                    <li><a href="../html/course.html?showCourse=js">Javascript Essentials</a></li>
+                    <li><a href="/tariqlabs/html/course.html?showCourse=js">Javascript Essentials</a></li>
                     <li><a href="#">Full Stack Web Development with Node</a></li>
                     <li><a href="#">React Bootcamp</a></li>
                     <li><a href="#">How Tech Companies Work</a></li>
@@ -35,8 +35,8 @@ footer.innerHTML = `
             <div>
                 <h4>Content</h4>
                 <ul>
-                    <li><a href="../html/allInterviews.html">Coding Interviews</a></li>
-                    <li><a href="../html/poadcast.html">Podcast</a></li>
+                    <li><a href="/tariqlabs/html/allInterviews.html">Coding Interviews</a></li>
+                    <li><a href="/tariqlabs/html/poadcast.html">Podcast</a></li>
                 </ul>
             </div>
              <div>
@@ -45,7 +45,7 @@ color: inherit;
 ">
         <div class="floating-container">
             <div class="scrolling-row">
-                <img src="../images/reema_logo.png" alt="Reema" class="profile-image">
+                <img src="/tariqlabs/images/reema_logo.png" alt="Reema" class="profile-image">
                 <span>ᴍᴀᴅᴇ ʙʏ 𝓡𝓮𝓮𝓶𝓪 𝓐. 𝓐𝓼𝓴𝓮𝓻</span>
             </div>
         </div>
