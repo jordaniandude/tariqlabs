@@ -7,10 +7,10 @@ footer.innerHTML = `
             <img src="/tariqlabs/images/tab_footer_icon.png" alt="tariq photo">
             <p>Tariq Elouzeh, Senior Software Engineer at Apple, Interviews Coach, Coding Instructor and Content Creator.</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank"><img src="tariqlabs/images/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/tariqelouzeh/" target="_blank"><img src="tariqlabs/images/instagram.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/@tariqelouzeh" target="_blank"><img src="tariqlabs/images/youtube.png" alt="YouTube"></a>
-                <a href="https://open.spotify.com/show/0KXiNLus1U3dAD2GwnMATu" target="_blank"><img src="tariqlabs/images/spotify.png" alt="poadcast"></a>
+                <a href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank"><img src="/tariqlabs/images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/tariqelouzeh/" target="_blank"><img src="/tariqlabs/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@tariqelouzeh" target="_blank"><img src="/tariqlabs/images/youtube.png" alt="YouTube"></a>
+                <a href="https://open.spotify.com/show/0KXiNLus1U3dAD2GwnMATu" target="_blank"><img src="/tariqlabs/images/spotify.png" alt="poadcast"></a>
             </div>
         </div>
         <div class="footer-links">
