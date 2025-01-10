@@ -1,16 +1,17 @@
 // Create the footer element
 const footer = document.createElement('footer');
+const images_root_link = "/tariqlabs";
 
 footer.innerHTML = `
     <div class="footer-container">
         <div class="footer-brand">
-            <img src="/tariqlabs/images/tab_footer_icon.png" alt="tariq photo">
+            <img src="${images_root_link}/images/tab_footer_icon.png" alt="tariq photo">
             <p>Tariq Elouzeh, Senior Software Engineer at Apple, Interviews Coach, Coding Instructor and Content Creator.</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/tariqelouzeh/" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/@tariqelouzeh" target="_blank"><img src="../images/youtube.png" alt="YouTube"></a>
-                <a href="https://open.spotify.com/show/0KXiNLus1U3dAD2GwnMATu" target="_blank"><img src="../images/spotify.png" alt="poadcast"></a>
+                <a href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank"><img src="${images_root_link}/images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/tariqelouzeh/" target="_blank"><img src="${images_root_link}/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@tariqelouzeh" target="_blank"><img src="${images_root_link}/images/youtube.png" alt="YouTube"></a>
+                <a href="https://open.spotify.com/show/0KXiNLus1U3dAD2GwnMATu" target="_blank"><img src="${images_root_link}/images/spotify.png" alt="poadcast"></a>
             </div>
         </div>
         <div class="footer-links">
@@ -26,7 +27,7 @@ footer.innerHTML = `
             <div>
                 <h4>Courses</h4>
                 <ul>
-                    <li><a href="/tariqlabs/html/course.html?showCourse=js">Javascript Essentials</a></li>
+                    <li><a href="${images_root_link}/html/course.html?showCourse=js">Javascript Essentials</a></li>
                     <li><a href="#">Full Stack Web Development with Node</a></li>
                     <li><a href="#">React Bootcamp</a></li>
                     <li><a href="#">How Tech Companies Work</a></li>
@@ -35,8 +36,8 @@ footer.innerHTML = `
             <div>
                 <h4>Content</h4>
                 <ul>
-                    <li><a href="/tariqlabs/html/allInterviews.html">Coding Interviews</a></li>
-                    <li><a href="/tariqlabs/html/poadcast.html">Podcast</a></li>
+                    <li><a href="${images_root_link}/html/allInterviews.html">Coding Interviews</a></li>
+                    <li><a href="${images_root_link}/html/poadcast.html">Podcast</a></li>
                 </ul>
             </div>
              <div>
@@ -45,7 +46,7 @@ color: inherit;
 ">
         <div class="floating-container">
             <div class="scrolling-row">
-                <img src="/tariqlabs/images/reema_logo.png" alt="Reema" class="profile-image">
+                <img src="${images_root_link}/images/reema_logo.png" alt="Reema" class="profile-image">
                 <span>ᴍᴀᴅᴇ ʙʏ 𝓡𝓮𝓮𝓶𝓪 𝓐. 𝓐𝓼𝓴𝓮𝓻</span>
             </div>
         </div>
