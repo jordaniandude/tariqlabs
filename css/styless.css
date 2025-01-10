@@ -93,7 +93,7 @@ body {
 }
 
 .logo img {
-    /* content: var(--logo-image); */
+    content: var(--logo-image);
     max-width: 100%;
     height: auto;
     width: 150px;
