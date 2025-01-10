@@ -14,7 +14,7 @@ nav.innerHTML = `
     <ul id="sidemenu" class="menu-closed">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/tariqlabs//html/courses.html">Courses</a></li>
-        <li><a href="tariqlabs/html/allInterviews.html">Coding Interviews</a></li>
+        <li><a href="/tariqlabs/html/allInterviews.html">Coding Interviews</a></li>
         <li><a href="/tariqlabs/html/poadcast.html">Podcast</a></li>
     </ul>
 </nav>
