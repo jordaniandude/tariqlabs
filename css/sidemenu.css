@@ -120,7 +120,7 @@ nav ul li a:hover::after {
     margin-left: -50%;
     max-width: 100%;
     height: auto;
-    width: 150px;
+    width: 100px;
     padding-top: 10px;
 }
 
