@@ -12,7 +12,7 @@ var allSections = [
     [
 
 
-        { "title": "ماذا سنتعلم في هذه الدورة؟", "link": "https://www.youtube.com/embed/U4y9yC5lrY8" },
+        { "title": "ماذا سنتعلم في هذه الدورة؟", "link": "https://www.youtube.com/embed/pK0DATmBrzQ" },
         { "title": "أساسيات تطوير الويب", "link": "https://www.youtube.com/embed/U4y9yC5lrY8" },
 
         { "title": "مقدمة إلى الجافاسكريبت", "link": "https://www.youtube.com/embed/uQLyDdkIHn0" },
@@ -41,20 +41,20 @@ var allSections = [
     ]
     ,
     [
-        { "title": "(Project Setup) التحقق من بيئة العمل", "link": "https://www.youtube.com/embed/6q5jxahdITQ", description: 'xxxxxxxxxx', },
-        { "title": "(Menu) القائمة الرئيسية", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Profile) الصورة الشخصية مع المقدمة", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Social Networks) روابط التواصل الإجتماعي", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Skills) المهارات الشخصية", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Animating Skills) المهارات الشخصية", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Experience) الخبرة", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Footer) ذيل الصفحة", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Projects 1) المشاريع", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Projects 2) المشاريع", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(Responsive) دعم مختلف الشاشات", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "GitHub", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "Git", "link": "https://www.youtube.com/embed/6q5jxahdITQ" },
-        { "title": "(GitHub Pages) نشر الموقع على الويب", "link": "https://www.youtube.com/embed/6q5jxahdITQ" }
+        { "title": "(Project Setup) التحقق من بيئة العمل", "link": "https://www.youtube.com/embed/xze6B4pd050" },
+        { "title": "(Menu) القائمة الرئيسية", "link": "https://www.youtube.com/embed/qIDfhUFMZ6M" },
+        { "title": "(Profile) الصورة الشخصية مع المقدمة", "link": "https://www.youtube.com/embed/iN9XJL1N9sY" },
+        { "title": "(Social Networks) روابط التواصل الإجتماعي", "link": "https://www.youtube.com/embed/eehFhpHZqak" },
+        { "title": "(Skills) المهارات الشخصية", "link": "https://www.youtube.com/embed/_Ji2rgbHcUI" },
+        { "title": "(Animating Skills) المهارات الشخصية", "link": "https://www.youtube.com/embed/Xwz36WdmkeM" },
+        { "title": "(Experience) الخبرة", "link": "https://www.youtube.com/embed/uoGhBl20GU8" },
+        { "title": "(Footer) ذيل الصفحة", "link": "https://www.youtube.com/embed/fIWK4mRyAak" },
+        { "title": "(Projects 1) المشاريع", "link": "https://www.youtube.com/embed/Jj9nBSoyXtk" },
+        { "title": "(Projects 2) المشاريع", "link": "https://www.youtube.com/embed/miUD1sDRX-A" },
+        { "title": "(Responsive) دعم مختلف الشاشات", "link": "https://www.youtube.com/embed/g2T4Lk-7400" },
+        { "title": "GitHub", "link": "https://www.youtube.com/embed/T1DoNkEJ4QY" },
+        { "title": "Git", "link": "https://www.youtube.com/embed/fDzhvvTFeTw" },
+        { "title": "(GitHub Pages) نشر الموقع على الويب", "link": "https://www.youtube.com/embed/yBwbG1lXx4o" }
     ]
 
 ]
