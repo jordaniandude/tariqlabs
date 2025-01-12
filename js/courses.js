@@ -5,18 +5,18 @@ const courses = [
         image: "../images/js-course.jpg",
         link: "course.html?showCourse=js"
     },
-    // {
-    //     title: "React Bootcamp",
-    //     description: "Learn the basics of React and build two Full Stack applications.",
-    //     image: "../images/react-course.jpeg",
-    //     link: "course.html?showCourse=react"
-    // },
-    // {
-    //     title: "Full Stack Web Development | Node",
-    //     description: "Learn the basics of Node JS And build a full stack application to apply the knowledge you learned.",
-    //     image: "../images/nodejs-course.png",
-    //     link: "course.html?showCourse=nodejs"
-    // }
+    {
+        title: "React Bootcamp",
+        description: "Learn the basics of React and build two Full Stack applications.",
+        image: "../images/react-course.jpeg",
+        link: "course.html?showCourse=react"
+    },
+    {
+        title: "Full Stack Web Development | Node",
+        description: "Learn the basics of Node JS And build a full stack application to apply the knowledge you learned.",
+        image: "../images/nodejs-course.png",
+        link: "course.html?showCourse=nodejs"
+    }
 ];
 
 function allCourses() {

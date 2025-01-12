@@ -3,7 +3,7 @@ var jsCourseDes = [
         title: 'React Bootcamp | 2023', targetAudience: "أي شخص لديه رغبة تعلم مهارة جديدة |\nالأشخاص الراغبين بتقوية مهاراتهم بالجافاسكريبت |\n تعلم مبادئ رياكت وإتقانها", courseLength: "17h 13m",
         numberOfLectures: 100,
         requirements: "معرفة مبدأية بالجافاسكريبت ستضمن نجاحكم بالدورة",
-        logo: "../images/react.gif"
+        logo: "../images/react.png"
     },
 ]
 
