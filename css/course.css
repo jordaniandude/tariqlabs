@@ -205,8 +205,8 @@ span.lecture-count {
 }
 
 .course-desc-container {
-    margin: 2%;
-    margin-top: 4%;
+    /* margin: 2%; */
+    /* margin-top: 4%; */
     padding: 20px;
     border-radius: 10px;
     background: #f5f5f5;
