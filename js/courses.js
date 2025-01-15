@@ -3,19 +3,19 @@ const courses = [
         title: "JavaScript Essentials",
         description: "Learn the essentials of JavaScript, build and deploy a website applying what you learned in addition to using HTML and CSS.",
         image: "../images/js-course.jpg",
-        link: "course.html?showCourse=js"
+        link: "/course/?showCourse=js"
     },
     {
         title: "React Bootcamp",
         description: "Learn the basics of React and build two Full Stack applications.",
         image: "../images/react-course.jpeg",
-        link: "course.html?showCourse=react"
+        link: "#"
     },
     {
         title: "Full Stack Web Development | Node",
         description: "Learn the basics of Node JS And build a full stack application to apply the knowledge you learned.",
         image: "../images/nodejs-course.png",
-        link: "course.html?showCourse=nodejs"
+        link: "#"
     }
 ];
 

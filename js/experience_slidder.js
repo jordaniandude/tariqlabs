@@ -1,59 +1,59 @@
 
-const images_root_link = "/tariqlabs";
+const images_root_link = "";
 
 const careerHighlights = [
     {
         title: "Senior Software Automation Engineer",
         company: "Apple",
-        icon: `${images_root_link}/images/apple.png`,
+        icon: `images/apple.png`,
         duration: "2022 - Current",
     },
     {
         title: "Senior Test Engineer",
         company: "Twitter",
-        icon: `${images_root_link}/images/twitter.png`,
+        icon: `images/twitter.png`,
         duration: "2019 - 2022",
     },
     {
         title: "Senior Software Engineer",
         company: "IBM Turbonomic",
-        icon: `${images_root_link}/images/turbo-logo.png`,
+        icon: `images/turbo-logo.png`,
         duration: "2019",
     },
     {
         title: "Soccer Referee",
         company: "United States Soccer Federation",
-        icon: `${images_root_link}/images/us-ref.png`,
+        icon: `images/us-ref.png`,
         duration: "2022 - Current",
     },
     {
         title: "Coding Instructor",
         platform: "Udemy",
-        icon: `${images_root_link}/images/udemy.png`,
+        icon: `images/udemy.png`,
         duration: "2020 - Present",
     },
     {
         title: "Software Engineer",
         platform: "ProgressSoft",
-        icon: `${images_root_link}/images/ps-logo.png`,
+        icon: `images/ps-logo.png`,
         duration: "2006 - 2013",
     },
     {
         title: "MSc in Cloud Computing",
         platform: "Stevens Institute of Technology",
-        icon: `${images_root_link}/images/stevens-logo.png`,
+        icon: `images/stevens-logo.png`,
         duration: "2013 - 2015",
     },
     {
         title: "Masters in Business Administration",
         platform: "New York Institute of Technology",
-        icon: `${images_root_link}/images/nyit-logo.png`,
+        icon: `images/nyit-logo.png`,
         duration: "2008 - 2010",
     },
     {
         title: "BSc in Software Engineering",
         platform: "Balqa' Applied University",
-        icon: `${images_root_link}/images/bau-logo.png`,
+        icon: `images/bau-logo.png`,
         duration: "2002 - 2006",
     },
 ];

@@ -4,7 +4,7 @@ nav.innerHTML = `
 <nav>
     <div class="logo-menu">
         <div class="logo">
-            <img src="/tariqlabs/images/logo-light.png" alt="Logo">
+            <a href="/"><img src="../images/logo-light.png" alt="Logo"></a>
         </div>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
@@ -12,10 +12,10 @@ nav.innerHTML = `
         </div>
     </div>
     <ul id="sidemenu" class="menu-closed">
-        <li><a href="/tariqlabs/index.html">Home</a></li>
-        <li><a href="/tariqlabs/html/courses.html">Courses</a></li>
-        <li><a href="/tariqlabs/html/allInterviews.html">Coding Interviews</a></li>
-        <li><a href="/tariqlabs/html/poadcast.html">Podcast</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="../courses/">Courses</a></li>
+        <li><a href="../allinterviews/">Coding Interviews</a></li>
+        <li><a href="../podcast/">Podcast</a></li>
     </ul>
 </nav>
 `;
