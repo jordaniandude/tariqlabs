@@ -27,11 +27,10 @@ function allCourses() {
         courseDiv.classList.add("work");
 
         courseDiv.innerHTML = `
-<img src="${course.image}" alt="${course.title}">
+<a href="${course.link}"><img src="${course.image}" alt="${course.title}"></a>
 <div class="layer">
 <h3>${course.title}</h3>
 <p>${course.description}</p>
-<a href="${course.link}">Go to course</a>
 </div>
 `;
 
@@ -48,11 +47,10 @@ function renderLastThreeCourses() {
         courseDiv.classList.add("work");
 
         courseDiv.innerHTML = `
-            <img src="${course.image}" alt="${course.title}">
+            <a href="${course.link}"><img src="${course.image}" alt="${course.title}"></a>
             <div class="layer">
                 <h3>${course.title}</h3>
                 <p>${course.description}</p>
-                <a href="${course.link}">Go to course</a>
             </div>
         `;
 
