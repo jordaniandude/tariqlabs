@@ -18,7 +18,7 @@ const careerHighlights = [
         title: "Senior Software Engineer",
         company: "IBM Turbonomic",
         icon: `images/turbo-logo.png`,
-        duration: "2019",
+        duration: "2015 - 2019",
     },
     {
         title: "Soccer Referee",

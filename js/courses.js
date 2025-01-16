@@ -6,13 +6,13 @@ const courses = [
         link: "/course/?showCourse=js"
     },
     {
-        title: "React Bootcamp",
+        title: "React Bootcamp (قريباً)",
         description: "Learn the basics of React and build two Full Stack applications.",
         image: "../images/react-course.jpeg",
         link: "#"
     },
     {
-        title: "Full Stack Web Development | Node",
+        title: "Full Stack Web Development | Node (قريباً)",
         description: "Learn the basics of Node JS And build a full stack application to apply the knowledge you learned.",
         image: "../images/nodejs-course.png",
         link: "#"
