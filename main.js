@@ -5,6 +5,21 @@ window.addEventListener("scroll", () => {
     .classList.toggle("scrolled", window.scrollY > 40);
 });
 
+// Mobile nav toggle
+function toggleNav() {
+  const links = document.querySelector(".nav-links");
+  const btn = document.getElementById("nav-hamburger");
+  links.classList.toggle("open");
+  btn.classList.toggle("open");
+}
+// Close mobile menu when a link is clicked
+document.querySelectorAll(".nav-links a").forEach((a) => {
+  a.addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.remove("open");
+    document.getElementById("nav-hamburger").classList.remove("open");
+  });
+});
+
 // Scroll reveal
 const observer = new IntersectionObserver(
   (entries) => {
