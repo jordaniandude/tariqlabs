@@ -1515,6 +1515,12 @@ html[lang="ar"] .hero::after {
   .podcast-showcase-inner {
     padding: 60px 24px;
   }
+  .ps-right {
+    order: -1;
+  }
+  .ps-logo-wrap {
+    max-width: 200px;
+  }
 
   /* Stats */
   .stats-grid {
