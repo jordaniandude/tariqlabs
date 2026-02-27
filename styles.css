@@ -66,6 +66,37 @@ html[lang="ar"] body * {
   opacity: 1;
 }
 
+/* ─── HAMBURGER ─── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  flex-shrink: 0;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ─── NAV ─── */
 nav {
   position: fixed;
@@ -970,7 +1001,7 @@ html[lang="ar"] .ps-headline {
 .ps-logo-wrap {
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 320px;
 }
 .ps-logo-glow {
   position: absolute;
@@ -1403,6 +1434,44 @@ html[lang="ar"] .hero::after {
   .nav-links {
     display: none;
   }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 39, 58, 0.97);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px 28px;
+    gap: 0;
+    z-index: 99;
+  }
+  .nav-links.open li {
+    width: 100%;
+  }
+  .nav-links.open a {
+    display: block;
+    padding: 13px 0;
+    font-size: 15px;
+    border-bottom: 1px solid var(--border);
+    opacity: 0.7;
+  }
+  .nav-links.open li:last-child a {
+    border-bottom: none;
+  }
+  .nav-links.open .nav-cta {
+    margin-top: 16px;
+    display: inline-flex;
+    border-bottom: none;
+    padding: 12px 28px;
+    opacity: 1;
+  }
+  .nav-hamburger {
+    display: flex;
+  }
 
   /* Hero — single column, photo visible above text */
   .hero {
@@ -1426,9 +1495,7 @@ html[lang="ar"] .hero::after {
     height: 275px;
   }
   .chip-2 {
-    inset-inline-end: -80px;
-    font-size: 10px;
-    padding: 8px 12px;
+    display: none;
   }
   h1 {
     font-size: clamp(40px, 11vw, 56px);
@@ -1445,6 +1512,9 @@ html[lang="ar"] .hero::after {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+  .podcast-showcase-inner {
+    padding: 60px 24px;
+  }
 
   /* Stats */
   .stats-grid {
@@ -1454,6 +1524,21 @@ html[lang="ar"] .hero::after {
   /* Services */
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Podcast stats row */
+  .ps-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .ps-stat-div {
+    display: none;
+  }
+
+  /* Mock interviews — show logo above content */
+  .mock-logo-wrap {
+    order: -1;
   }
 
   /* Contact */
@@ -1673,7 +1758,7 @@ html[lang="ar"] .mock-headline {
 }
 .mock-logo {
   width: 100%;
-  max-width: 420px;
+  max-width: 320px;
   position: relative;
   z-index: 1;
   filter: drop-shadow(0 0 48px rgba(7, 220, 166, 0.22));
