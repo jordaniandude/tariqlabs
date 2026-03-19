@@ -12,11 +12,20 @@ function toggleNav() {
   links.classList.toggle("open");
   btn.classList.toggle("open");
 }
-// Close mobile menu when a link is clicked
+// Close mobile menu when a link is clicked (but not the dropdown toggle)
 document.querySelectorAll(".nav-links a").forEach((a) => {
   a.addEventListener("click", () => {
+    if (a.classList.contains("nav-dropdown-toggle")) return;
     document.querySelector(".nav-links").classList.remove("open");
     document.getElementById("nav-hamburger").classList.remove("open");
+  });
+});
+
+// Mobile nav dropdown toggle
+document.querySelectorAll(".nav-dropdown-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggle.closest(".nav-dropdown").classList.toggle("open");
   });
 });
 
