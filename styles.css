@@ -19,7 +19,7 @@ html {
 body {
   background: var(--bg);
   color: var(--white);
-  font-family: "Space Grotesk", "Cairo", sans-serif;
+  font-family: "Inter", "Cairo", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   transition: font-family 0.2s;
@@ -286,7 +286,7 @@ html[lang="ar"] .nav-dropdown.open .nav-dropdown-menu {
 }
 
 h1 {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(52px, 6.5vw, 84px);
   font-weight: 800;
   line-height: 0.98;
@@ -641,7 +641,7 @@ h1 .yellow {
   opacity: 1;
 }
 .cc-bau-text {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 800;
   font-size: 30px;
   color: var(--white);
@@ -651,7 +651,7 @@ h1 .yellow {
 }
 
 .cc-years {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: var(--teal);
@@ -667,7 +667,7 @@ h1 .yellow {
 }
 
 .cc-title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: var(--white);
@@ -734,7 +734,7 @@ h1 .yellow {
   flex: 1;
 }
 .stat-num {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 800;
   color: var(--yellow);
@@ -742,7 +742,7 @@ h1 .yellow {
   margin-bottom: 6px;
 }
 .stat-label {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
   color: var(--white);
@@ -780,7 +780,7 @@ h1 .yellow {
   align-items: center;
 }
 .about-headline {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(34px, 4vw, 54px);
   font-weight: 800;
   line-height: 1.08;
@@ -829,7 +829,7 @@ html[lang="ar"] .about-headline {
   border-color: rgba(249, 230, 99, 0.2);
 }
 .stat-num {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: 38px;
   font-weight: 800;
   letter-spacing: -2px;
@@ -880,7 +880,7 @@ html[lang="ar"] .about-headline {
   margin-bottom: 20px;
 }
 .srv-title {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: 22px;
   font-weight: 800;
   color: var(--white);
@@ -950,7 +950,7 @@ html[lang="ar"] .srv-title {
   border-radius: 2px;
 }
 .ps-headline {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 800;
   line-height: 1.08;
@@ -989,7 +989,7 @@ html[lang="ar"] .ps-headline {
 }
 .ps-stat-num {
   display: block;
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: 28px;
   font-weight: 800;
   letter-spacing: -1px;
@@ -1139,7 +1139,7 @@ html[lang="ar"] .ps-headline {
   border-radius: 2px;
 }
 .hack-headline {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 800;
   line-height: 1.08;
@@ -1208,7 +1208,7 @@ html[lang="ar"] .ps-headline {
 
 /* ─── TESTIMONIALS ─── */
 .tst-headline {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 800;
   color: var(--white);
@@ -1299,7 +1299,7 @@ html[lang="ar"] .ps-headline {
   border-radius: 50%;
   background: var(--teal);
   color: var(--bg);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 700;
   display: flex;
@@ -1309,13 +1309,13 @@ html[lang="ar"] .ps-headline {
   letter-spacing: 0.5px;
 }
 .tst-name {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: var(--white);
 }
 .tst-date {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   color: var(--white);
   opacity: 0.4;
@@ -1368,7 +1368,7 @@ html[lang="ar"] .ps-headline {
   margin: 0 auto;
 }
 .contact-headline {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(42px, 6vw, 72px);
   font-weight: 800;
   letter-spacing: -3px;
@@ -1524,6 +1524,45 @@ html[lang="ar"] .hero::after {
     padding: 12px 28px;
     opacity: 1;
   }
+
+  /* Nav dropdown on mobile — inline expand */
+  .nav-dropdown-menu {
+    position: static;
+    transform: none !important;
+    min-width: unset;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    display: none;
+  }
+  .nav-dropdown.open .nav-dropdown-menu {
+    display: block;
+    transform: none !important;
+  }
+  .nav-dropdown-menu a {
+    padding: 10px 0 13px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    opacity: 0.5;
+    white-space: normal;
+  }
+  html[lang="ar"] .nav-dropdown-menu a {
+    padding: 10px 16px 13px 0;
+  }
+  .nav-dropdown-menu a:hover {
+    background: transparent;
+  }
+  .nav-dropdown-toggle::after {
+    content: " ▾";
+    font-size: 10px;
+    opacity: 0.5;
+  }
   .nav-hamburger {
     display: flex;
   }
@@ -1672,7 +1711,7 @@ html[lang="ar"] .hero::after {
   border-radius: 2px;
 }
 .mock-headline {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 800;
   line-height: 1.08;
@@ -1875,7 +1914,7 @@ html[lang="ar"] .mock-headline {
   border-radius: 2px;
 }
 .yt-headline {
-  font-family: "Syne", "Cairo", sans-serif;
+  font-family: "Manrope", "Cairo", sans-serif;
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 800;
   line-height: 1.08;
