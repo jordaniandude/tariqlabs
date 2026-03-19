@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="../../logos/tariq.png" type="image/png" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -62,14 +66,26 @@
         animation: fadeUp 0.8s forwards 0.2s;
       }
       .course-hero h1 {
-        font-size: clamp(48px, 7vw, 88px);
-        letter-spacing: -3px;
-        line-height: 0.95;
+        font-family: "Clash Display", "Cairo", sans-serif;
+        font-size: clamp(52px, 8vw, 100px);
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1;
         margin-bottom: 28px;
       }
       html[lang="ar"] .course-hero h1 {
+        font-family: "Cairo", sans-serif;
+        font-size: clamp(40px, 6.5vw, 80px);
+        font-weight: 800;
         letter-spacing: 0;
         line-height: 1.1;
+      }
+      .ar-dot {
+        display: none;
+      }
+      html[lang="ar"] .ar-dot {
+        display: inline;
+        color: var(--white);
       }
       .course-hero-desc {
         font-size: 16px;
@@ -108,11 +124,12 @@
         padding: 20px 24px;
         margin-bottom: 36px;
         font-family: "SF Mono", "Fira Code", "Consolas", monospace;
-        font-size: 13px;
+        font-size: clamp(11px, 2.8vw, 13px);
         line-height: 1.7;
         backdrop-filter: blur(8px);
         box-shadow: 0 0 0 1px rgba(7, 220, 166, 0.06), 0 24px 60px rgba(0,0,0,0.4);
-        width: 480px;
+        width: min(480px, 100%);
+        overflow-x: auto;
       }
       .hero-code code {
         display: block;
@@ -224,7 +241,7 @@
         background: linear-gradient(to bottom, transparent, var(--border));
       }
       .enroll-headline {
-        font-family: "Syne", "Cairo", sans-serif;
+        font-family: "Manrope", "Cairo", sans-serif;
         font-size: clamp(36px, 5vw, 60px);
         font-weight: 800;
         letter-spacing: -2px;
@@ -327,7 +344,7 @@
         color: var(--teal);
       }
       .enroll-success-title {
-        font-family: "Syne", sans-serif;
+        font-family: "Manrope", sans-serif;
         font-size: 22px;
         font-weight: 800;
         color: var(--white);
@@ -340,66 +357,6 @@
 
       /* Nav active state */
       .nav-links a.active-page {
-        opacity: 1;
-        color: var(--teal);
-      }
-
-      /* Nav dropdown */
-      .nav-dropdown {
-        position: relative;
-      }
-      .nav-dropdown-toggle {
-        cursor: pointer;
-      }
-      .nav-dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        min-width: 200px;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 8px;
-        margin-top: 12px;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
-        transform: translateX(-50%) translateY(8px);
-        z-index: 100;
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
-      }
-      html[lang="ar"] .nav-dropdown-menu {
-        left: auto;
-        right: 50%;
-        transform: translateX(50%) translateY(8px);
-      }
-      .nav-dropdown:hover .nav-dropdown-menu,
-      .nav-dropdown.open .nav-dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(-50%) translateY(0);
-      }
-      html[lang="ar"] .nav-dropdown:hover .nav-dropdown-menu,
-      html[lang="ar"] .nav-dropdown.open .nav-dropdown-menu {
-        transform: translateX(50%) translateY(0);
-      }
-      .nav-dropdown-menu a {
-        display: block;
-        padding: 10px 16px;
-        font-size: 13px;
-        color: var(--white);
-        opacity: 0.7;
-        text-decoration: none;
-        border-radius: 8px;
-        transition: background 0.15s, opacity 0.15s;
-        white-space: nowrap;
-      }
-      .nav-dropdown-menu a:hover {
-        background: rgba(7, 220, 166, 0.08);
-        opacity: 1;
-      }
-      .nav-dropdown-menu a.active-page {
         opacity: 1;
         color: var(--teal);
       }
@@ -430,7 +387,7 @@
         margin-bottom: 18px;
       }
       .project-num {
-        font-family: "Syne", "Cairo", sans-serif;
+        font-family: "Manrope", "Cairo", sans-serif;
         font-size: 14px;
         font-weight: 800;
         color: var(--teal);
@@ -445,7 +402,7 @@
         flex: 1;
       }
       .project-name {
-        font-family: "Syne", "Cairo", sans-serif;
+        font-family: "Manrope", "Cairo", sans-serif;
         font-size: 22px;
         font-weight: 800;
         color: var(--white);
@@ -644,7 +601,7 @@
             <a href="../../#mock-interviews" data-en="Mock Interviews" data-ar="مقابلات البرمجة">Mock Interviews</a>
           </li>
           <li class="nav-dropdown">
-            <a href="#" class="nav-dropdown-toggle active-page" data-en="Courses" data-ar="الكورسات" onclick="event.preventDefault()">Courses</a>
+            <a href="#" class="nav-dropdown-toggle active-page" data-en="Courses" data-ar="الكورسات">Courses</a>
             <div class="nav-dropdown-menu">
               <a href="/courses/ai-agents/" class="active-page" data-en="Build AI Agents" data-ar="ابنِ وكلاء الذكاء الاصطناعي">Build AI Agents</a>
             </div>
@@ -694,7 +651,7 @@
           <span class="teal" data-en=" AI" data-ar=" وكلاء"> AI</span>
           <br />
           <span data-en="Agents" data-ar="الذكاء">Agents</span>
-          <span class="yellow" data-en="." data-ar=" الاصطناعي.">.</span>
+          <span class="yellow" data-en="." data-ar=" الاصطناعي">.</span><span class="ar-dot" data-en="" data-ar="."></span>
         </h1>
         <p class="course-hero-desc" data-en="Build 4 production AI agents from scratch — a personal assistant with RAG, an MCP tool server, multi-agent trip planners, and an AI career coach. Hands-on Arabic course. No fluff, just real code." data-ar="ابنِ 4 مشاريع AI agents حقيقية من الصفر — مساعد شخصي مع RAG، خادم أدوات MCP، مخططات سفر متعددة الوكلاء، ومستشار مهني ذكي. كورس عملي بالعربي. بدون تعقيد، فقط كود.">
           Build 4 production AI agents from scratch — a personal assistant with RAG, an MCP tool server, multi-agent trip planners, and an AI career coach. Hands-on Arabic course. No fluff, just real code.
@@ -715,8 +672,9 @@
             <span class="code-line">&nbsp;&nbsp;<span class="c-var">model</span><span class="c-op">,</span></span>
             <span class="code-line">&nbsp;&nbsp;<span class="c-var">tools</span><span class="c-op">: [</span><span class="c-fn">searchKnowledgeBase</span><span class="c-op">],</span></span>
             <span class="code-line">&nbsp;&nbsp;<span class="c-var">memory</span><span class="c-op">,</span></span>
-            <span class="code-line" style="display:flex;flex-wrap:wrap;">&nbsp;&nbsp;<span class="c-var">systemPrompt</span><span class="c-op">:</span>&nbsp;<span class="c-str" style="display:block;white-space:nowrap;">`You are a helpful assistant.</span></span>
-            <span class="code-line">&nbsp;&nbsp;<span class="c-str">Search the knowledge base. Be accurate.`</span><span class="c-op">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="c-var">systemPrompt</span><span class="c-op">:</span> <span class="c-str">`You are a helpful</span></span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">assistant. Search the knowledge</span></span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">base. Be accurate.`</span><span class="c-op">,</span></span>
             <span class="code-line"><span class="c-op">})</span></span>
           </code>
         </div>
@@ -986,11 +944,20 @@
         links.classList.toggle("open");
         btn.classList.toggle("open");
       }
-      // Close mobile menu when a link is clicked
+      // Close mobile menu when a link is clicked (but not the dropdown toggle)
       document.querySelectorAll(".nav-links a").forEach((a) => {
         a.addEventListener("click", () => {
+          if (a.classList.contains("nav-dropdown-toggle")) return;
           document.querySelector(".nav-links").classList.remove("open");
           document.getElementById("nav-hamburger").classList.remove("open");
+        });
+      });
+
+      // Mobile nav dropdown toggle
+      document.querySelectorAll(".nav-dropdown-toggle").forEach((toggle) => {
+        toggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          toggle.closest(".nav-dropdown").classList.toggle("open");
         });
       });
 
