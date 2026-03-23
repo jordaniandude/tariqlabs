@@ -44,7 +44,10 @@ body::after {
   pointer-events: none;
   z-index: 0;
 }
-body > *:not(nav) {
+body > section,
+body > main,
+body > div,
+body > footer {
   position: relative;
   z-index: 1;
 }
