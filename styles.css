@@ -1524,10 +1524,8 @@ html[lang="ar"] .hero::after {
   right: -100px;
 }
 
-@media (max-width: 768px) {
-  nav {
-    padding: 18px 24px;
-  }
+/* ─── NAV COLLAPSE (tablet) ─── */
+@media (max-width: 1024px) {
   .nav-links {
     display: none;
   }
@@ -1607,6 +1605,12 @@ html[lang="ar"] .hero::after {
   }
   .nav-hamburger {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 18px 24px;
   }
 
   /* Hero — single column, photo visible above text */
