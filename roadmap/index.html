@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Agent Engineering Roadmap — Free Download | Tariq Labs</title>
+    <meta name="description" content="A 10-phase learning path from prompt engineering to production multi-agent systems. Know exactly what to learn and in what order." />
+    <meta property="og:title" content="AI Agent Engineering Roadmap — Free Download" />
+    <meta property="og:description" content="A 10-phase learning path from prompt engineering to production multi-agent systems." />
+    <meta property="og:image" content="https://tariqlabs.com/logos/tariqlabs.png" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="../logos/tariq.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      html, body { overflow-x: clip; }
+
+      /* ── Hero ── */
+      .lm-hero {
+        padding: 140px 40px 80px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .lm-hero h1 {
+        font-family: "Clash Display", "Cairo", sans-serif;
+        font-size: clamp(36px, 6vw, 68px);
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1.08;
+        margin-bottom: 24px;
+      }
+      html[lang="ar"] .lm-hero h1 {
+        font-family: "Cairo", sans-serif;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+      .lm-ar-br, .lm-ar-line, .lm-ar-dot { display: none; }
+      html[lang="ar"] .lm-ar-br, html[lang="ar"] .lm-ar-line, html[lang="ar"] .lm-ar-dot { display: inline; }
+      html[lang="ar"] .lm-ar-line { color: var(--teal); }
+      html[lang="ar"] .lm-en-dot { display: none; }
+      .lm-hero-sub {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--white);
+        opacity: 0.6;
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+      .lm-badge {
+        display: inline-block;
+        background: rgba(7, 220, 166, 0.1);
+        border: 1px solid rgba(7, 220, 166, 0.25);
+        color: var(--teal);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        border-radius: 100px;
+        margin-bottom: 28px;
+      }
+
+      /* ── Form ── */
+      .lm-form-wrapper {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+      .lm-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .lm-input {
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--white);
+        font-size: 15px;
+        font-family: inherit;
+        outline: none;
+        transition: border-color 0.2s;
+      }
+      .lm-input::placeholder {
+        color: rgba(240, 249, 255, 0.35);
+      }
+      .lm-input:focus {
+        border-color: rgba(7, 220, 166, 0.4);
+      }
+      .lm-submit {
+        width: 100%;
+        padding: 16px 32px;
+        border-radius: 12px;
+        border: none;
+        background: var(--teal);
+        color: var(--bg);
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inherit;
+        cursor: pointer;
+        transition: opacity 0.2s, transform 0.2s;
+      }
+      .lm-submit:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+      .lm-submit:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .lm-privacy {
+        font-size: 12px;
+        color: var(--white);
+        opacity: 0.35;
+        text-align: center;
+        margin-top: 8px;
+      }
+      .lm-success {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+        padding: 32px 0;
+      }
+      .lm-success-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: rgba(7, 220, 166, 0.12);
+        border: 2px solid rgba(7, 220, 166, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+      .lm-success-title {
+        font-family: "Manrope", "Cairo", sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--white);
+      }
+      .lm-success-text {
+        font-size: 15px;
+        color: var(--white);
+        opacity: 0.6;
+        line-height: 1.7;
+      }
+
+      /* honeypot */
+      .lm-hp { position: absolute; left: -9999px; }
+
+      /* ── What's Inside ── */
+      .lm-section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 40px 80px;
+      }
+      .lm-section-title {
+        font-family: "Manrope", "Cairo", sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--white);
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      .lm-section-sub {
+        font-size: 15px;
+        color: var(--white);
+        opacity: 0.5;
+        text-align: center;
+        margin-bottom: 48px;
+      }
+
+      /* ── Value props ── */
+      .lm-values {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .lm-value-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 28px 24px;
+        text-align: center;
+        transition: border-color 0.2s;
+      }
+      .lm-value-card:hover {
+        border-color: rgba(7, 220, 166, 0.2);
+      }
+      .lm-value-icon {
+        font-size: 28px;
+        margin-bottom: 14px;
+      }
+      .lm-value-title {
+        font-family: "Manrope", "Cairo", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
+      .lm-value-desc {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--white);
+        opacity: 0.5;
+      }
+
+      /* ── Who it's for ── */
+      .lm-audience {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .lm-audience-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 28px 24px;
+        text-align: center;
+      }
+      .lm-audience-icon {
+        font-size: 28px;
+        margin-bottom: 14px;
+      }
+      .lm-audience-title {
+        font-family: "Manrope", "Cairo", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
+      .lm-audience-desc {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--white);
+        opacity: 0.5;
+      }
+
+      /* ── Course CTA ── */
+      .lm-course-cta {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 40px 80px;
+        text-align: center;
+      }
+      .lm-cta-card {
+        background: linear-gradient(135deg, rgba(30, 48, 186, 0.1), rgba(7, 220, 166, 0.06));
+        border: 1px solid rgba(7, 220, 166, 0.15);
+        border-radius: 20px;
+        padding: 48px 40px;
+      }
+      .lm-cta-title {
+        font-family: "Manrope", "Cairo", sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--white);
+        margin-bottom: 12px;
+      }
+      .lm-cta-text {
+        font-size: 15px;
+        line-height: 1.7;
+        color: var(--white);
+        opacity: 0.6;
+        margin-bottom: 28px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .lm-cta-btn {
+        display: inline-block;
+        padding: 14px 36px;
+        border-radius: 12px;
+        background: var(--teal);
+        color: var(--bg);
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: opacity 0.2s, transform 0.2s;
+      }
+      .lm-cta-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+
+      /* ── Footer ── */
+      .lm-footer {
+        text-align: center;
+        padding: 32px 40px;
+        font-size: 13px;
+        color: var(--white);
+        opacity: 0.3;
+        border-top: 1px solid var(--border);
+      }
+      .lm-footer a {
+        color: var(--teal);
+        text-decoration: none;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 768px) {
+        .lm-hero { padding: 120px 24px 60px; }
+        .lm-section { padding: 0 24px 60px; }
+        .lm-values { grid-template-columns: 1fr; }
+        .lm-audience { grid-template-columns: 1fr; }
+        .lm-course-cta { padding: 0 24px 60px; }
+        .lm-cta-card { padding: 36px 24px; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="../" class="nav-logo">
+        <img src="../logos/logo-white.png" alt="Tariq Labs" style="height:38px; width:auto; display:block;" />
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="../#about" data-en="About" data-ar="من أنا">About</a></li>
+          <li><a href="../#youtube-content" data-en="Videos" data-ar="فيديوهات">Videos</a></li>
+          <li><a href="../#podcast" data-en="Podcast" data-ar="البودكاست">Podcast</a></li>
+          <li><a href="../#hackathon" data-en="Hackathon" data-ar="هاكاثون">Hackathon</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-dropdown-toggle" data-en="Courses" data-ar="الكورسات">Courses</a>
+            <div class="nav-dropdown-menu">
+              <a href="../courses/ai-agents/" data-en="AI Agent Engineering" data-ar="هندسة وكلاء الذكاء الاصطناعي">AI Agent Engineering</a>
+            </div>
+          </li>
+          <li>
+            <a href="../#contact" class="nav-cta" data-en="Contact Me" data-ar="تواصل معي">Contact Me</a>
+          </li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">AR</button>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="lm-hero">
+      <div class="lm-badge" data-en="FREE DOWNLOAD" data-ar="تحميل مجاني">FREE DOWNLOAD</div>
+      <h1>
+        <span data-en="AI Agent Engineering" data-ar="خارطة طريق">AI Agent Engineering</span><br />
+        <span class="teal" data-en="Roadmap" data-ar="هندسة وكلاء">Roadmap</span><span class="yellow lm-en-dot">.</span>
+        <br class="lm-ar-br" /><span class="lm-ar-line" data-en="" data-ar="الذكاء الاصطناعي"></span><span class="yellow lm-ar-dot">.</span>
+      </h1>
+      <p class="lm-hero-sub" data-en="A 10-phase visual roadmap that takes you from LLM fundamentals to production multi-agent systems. Know exactly what to learn and in what order." data-ar="خارطة طريق بصرية من 10 مراحل تأخذك من أساسيات نماذج اللغة إلى أنظمة الوكلاء المتعددة في الإنتاج. اعرف بالضبط ماذا تتعلم وبأي ترتيب.">
+        A 10-phase visual roadmap that takes you from LLM fundamentals to production multi-agent systems. Know exactly what to learn and in what order.
+      </p>
+
+      <!-- Form -->
+      <div class="lm-form-wrapper">
+        <form id="lm-form" class="lm-form" onsubmit="handleSubmit(event)">
+          <input class="lm-input" id="lm-name" required placeholder="First Name" type="text" data-en-placeholder="First Name" data-ar-placeholder="الاسم الأول" />
+          <input class="lm-input" id="lm-email" required placeholder="Email Address" type="email" data-en-placeholder="Email Address" data-ar-placeholder="البريد الإلكتروني" />
+          <button type="submit" class="lm-submit" id="lm-btn" data-en="Download Free Roadmap" data-ar="حمّل الخارطة مجاناً">
+            <span>Download Free Roadmap</span>
+          </button>
+        </form>
+        <div class="lm-success" id="lm-success">
+          <div class="lm-success-icon">&#10003;</div>
+          <div class="lm-success-title" data-en="Check your email!" data-ar="تفقّد بريدك الإلكتروني!">Check your email!</div>
+          <div class="lm-success-text" data-en="We've sent you an email with the roadmap download link." data-ar="أرسلنا لك بريداً إلكترونياً يحتوي على رابط تحميل الخارطة.">We've sent you an email with the roadmap download link.</div>
+        </div>
+        <p class="lm-privacy" id="lm-privacy" data-en="No spam. We respect your privacy." data-ar="بدون سبام. نحترم خصوصيتك.">No spam. We respect your privacy.</p>
+      </div>
+    </section>
+
+    <!-- WHY THIS ROADMAP -->
+    <section class="lm-section">
+      <h2 class="lm-section-title" data-en="Stop learning random tutorials." data-ar="توقف عن تعلم دروس عشوائية.">Stop learning random tutorials.</h2>
+      <p class="lm-section-sub" data-en="The AI landscape moves fast. This roadmap gives you clarity." data-ar="مجال الذكاء الاصطناعي يتحرك بسرعة. هذه الخارطة تمنحك الوضوح.">The AI landscape moves fast. This roadmap gives you clarity.</p>
+
+      <div class="lm-values">
+        <div class="lm-value-card">
+          <div class="lm-value-icon">&#128506;</div>
+          <div class="lm-value-title" data-en="10-Phase Path" data-ar="مسار من 10 مراحل">10-Phase Path</div>
+          <div class="lm-value-desc" data-en="From LLM basics to production deployment — every phase mapped out with the skills you need at each step." data-ar="من أساسيات نماذج اللغة إلى النشر في الإنتاج — كل مرحلة مرسومة بالمهارات التي تحتاجها.">From LLM basics to production deployment — every phase mapped out with the skills you need at each step.</div>
+        </div>
+        <div class="lm-value-card">
+          <div class="lm-value-icon">&#9889;</div>
+          <div class="lm-value-title" data-en="Learn in Order" data-ar="تعلم بالترتيب">Learn in Order</div>
+          <div class="lm-value-desc" data-en="Know exactly what to learn next. No wasted time on topics you're not ready for or have already outgrown." data-ar="اعرف بالضبط ماذا تتعلم بعد ذلك. بدون وقت ضائع على مواضيع لست جاهزاً لها.">Know exactly what to learn next. No wasted time on topics you're not ready for or have already outgrown.</div>
+        </div>
+        <div class="lm-value-card">
+          <div class="lm-value-icon">&#127942;</div>
+          <div class="lm-value-title" data-en="Built by a Practitioner" data-ar="من صنع ممارس">Built by a Practitioner</div>
+          <div class="lm-value-desc" data-en="Not a theoretical framework. This is the path I followed building real AI agent systems in production." data-ar="ليس إطاراً نظرياً. هذا هو المسار الذي اتبعته في بناء أنظمة وكلاء ذكاء اصطناعي حقيقية.">Not a theoretical framework. This is the path I followed building real AI agent systems in production.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="lm-section">
+      <h2 class="lm-section-title" data-en="Who is this for?" data-ar="لمن هذه الخارطة؟">Who is this for?</h2>
+      <p class="lm-section-sub" data-en="If any of these sound like you, this roadmap will save you hours of research." data-ar="إذا كان أي من هذه يشبهك، هذه الخارطة ستوفر عليك ساعات من البحث.">If any of these sound like you, this roadmap will save you hours of research.</p>
+
+      <div class="lm-audience">
+        <div class="lm-audience-card">
+          <div class="lm-audience-icon">&#128187;</div>
+          <div class="lm-audience-title" data-en="Engineers" data-ar="المهندسون">Engineers</div>
+          <div class="lm-audience-desc" data-en="You want to build with LLMs, not just use them. You need a structured path." data-ar="تريد البناء مع نماذج اللغة، ليس فقط استخدامها. تحتاج مساراً منظماً.">You want to build with LLMs, not just use them. You need a structured path.</div>
+        </div>
+        <div class="lm-audience-card">
+          <div class="lm-audience-icon">&#127919;</div>
+          <div class="lm-audience-title" data-en="Career Switchers" data-ar="المنتقلون مهنياً">Career Switchers</div>
+          <div class="lm-audience-desc" data-en="You're moving into AI engineering and need to know what skills matter and in what order." data-ar="تنتقل إلى هندسة الذكاء الاصطناعي وتحتاج معرفة المهارات المهمة وترتيبها.">You're moving into AI engineering and need to know what skills matter and in what order.</div>
+        </div>
+        <div class="lm-audience-card">
+          <div class="lm-audience-icon">&#129504;</div>
+          <div class="lm-audience-title" data-en="Overwhelmed Learners" data-ar="المتعلمون الحائرون">Overwhelmed Learners</div>
+          <div class="lm-audience-desc" data-en="The AI landscape is noisy. This roadmap cuts through the noise with a clear 10-step path." data-ar="مجال الذكاء الاصطناعي مزدحم. هذه الخارطة تختصر الطريق بعشر خطوات واضحة.">The AI landscape is noisy. This roadmap cuts through the noise with a clear 10-step path.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSE CTA -->
+    <section class="lm-course-cta">
+      <div class="lm-cta-card">
+        <h2 class="lm-cta-title" data-en="Start building AI agents." data-ar="ابدأ ببناء وكلاء الذكاء الاصطناعي.">Start building AI agents.</h2>
+        <p class="lm-cta-text" data-en-html="Phases 2–5 of the roadmap are covered hands-on in the <span class='yellow'>AI Agent Engineering</span> course. Build 4 real projects from scratch." data-ar-html="المراحل 2–5 من الخارطة مغطاة عملياً في كورس <span class='yellow'>هندسة وكلاء الذكاء الاصطناعي</span>. ابنِ 4 مشاريع حقيقية من الصفر.">
+          Phases 2–5 of the roadmap are covered hands-on in the <span class="yellow">AI Agent Engineering</span> course. Build 4 real projects from scratch.
+        </p>
+        <a href="../courses/ai-agents/" class="lm-cta-btn" data-en="Explore the Course" data-ar="استكشف الكورس">Explore the Course</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="lm-footer">
+      <span data-en="&copy; 2026 Tariq Labs. All rights reserved." data-ar="&copy; 2026 Tariq Labs. جميع الحقوق محفوظة.">&copy; 2026 Tariq Labs. All rights reserved.</span>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+      // ── Language toggle ──
+      function setLang(lang) {
+        const html = document.documentElement;
+        html.setAttribute("lang", lang);
+        html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+
+        document.getElementById("btn-en").classList.toggle("active", lang === "en");
+        document.getElementById("btn-ar").classList.toggle("active", lang === "ar");
+
+        document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+          el.textContent = el.getAttribute("data-" + lang);
+        });
+
+        // Handle elements with HTML content
+        document.querySelectorAll("[data-" + lang + "-html]").forEach(el => {
+          el.innerHTML = el.getAttribute("data-" + lang + "-html");
+        });
+
+        // Update placeholders
+        document.querySelectorAll("[data-" + lang + "-placeholder]").forEach(el => {
+          el.placeholder = el.getAttribute("data-" + lang + "-placeholder");
+        });
+      }
+
+      // ── Nav toggle ──
+      function toggleNav() {
+        const hamburger = document.getElementById("nav-hamburger");
+        const links = document.querySelector(".nav-links");
+        hamburger.classList.toggle("open");
+        links.classList.toggle("open");
+      }
+
+      // Close nav on link click
+      document.querySelectorAll(".nav-links a").forEach(a => {
+        a.addEventListener("click", () => {
+          document.getElementById("nav-hamburger").classList.remove("open");
+          document.querySelector(".nav-links").classList.remove("open");
+        });
+      });
+
+      // Dropdown
+      document.querySelectorAll(".nav-dropdown-toggle").forEach(toggle => {
+        toggle.addEventListener("click", e => {
+          e.preventDefault();
+          toggle.closest(".nav-dropdown").classList.toggle("open");
+        });
+      });
+
+      // ── Form submit → Kit + success message ──
+      async function handleSubmit(e) {
+        e.preventDefault();
+        const btn = document.getElementById("lm-btn");
+        const name = document.getElementById("lm-name").value.trim();
+        const email = document.getElementById("lm-email").value.trim();
+
+        btn.disabled = true;
+        btn.textContent = "...";
+
+        try {
+          await fetch("https://api.convertkit.com/v3/forms/9343333/subscribe", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              api_key: "ggN7RN48Wb1_0aRmCc-ceA",
+              email: email,
+              first_name: name
+            })
+          });
+        } catch (_) {}
+
+        // Show success state
+        document.getElementById("lm-form").style.display = "none";
+        document.getElementById("lm-privacy").style.display = "none";
+        document.getElementById("lm-success").style.display = "flex";
+      }
+    </script>
+  </body>
+</html>
