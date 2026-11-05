@@ -1,86 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Poadcast</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap"
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقني بحت Podcast with Tariq Elouzeh — Arabic Tech, AI &amp; Engineering Conversations | Tariq Labs</title>
+    <meta
+      name="description"
+      content="تقني بحت: an Arabic tech podcast where Tariq Elouzeh sits down with Arab engineers, builders and experts to talk careers, AI, software engineering and startups. Watch on YouTube or listen on Spotify and Apple Podcasts."
+    />
+    <link rel="canonical" href="https://tariqlabs.com/podcast/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tariq Labs" />
+    <meta property="og:title" content="تقني بحت — Arabic Tech Podcast with Tariq Elouzeh" />
+    <meta
+      property="og:description"
+      content="Real conversations with Arab engineers and builders about careers, AI, code and startups — in Arabic."
+    />
+    <meta property="og:url" content="https://tariqlabs.com/podcast/" />
+    <meta property="og:image" content="https://tariqlabs.com/images/podcast-logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تقني بحت — Arabic Tech Podcast" />
+    <meta name="twitter:image" content="https://tariqlabs.com/images/podcast-logo.png" />
+    <link rel="icon" href="../logos/tariq.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-        <link rel="icon" href="../images/tab_footer_icon.png" type="image/x-icon">
-
-        <style>
-            @import url(../css/interviews.css);
-            @import url(../css/course.css);
-            @import url(../css/sidemenu.css);
-            @import url(../css/footer.css);
-        </style>
-        <script src="https://kit.fontawesome.com/8b4c251657.js" crossorigin="anonymous"></script>
-
-    </head>
-
-    <body>
-        <script src="../js/sidemenu.js"></script>
-
-
-
-
-        <div class="course-container">
-            <div class="course-playlist">
-                <h2>Poadcast Playlist</h2>
-                <div id="playlist">
-                    <!-- Playlist will be populated dynamically using JavaScript -->
-                </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/podcast.css?v=22" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="../" class="nav-logo">
+        <img src="../logos/logo-white.png" alt="Tariq Labs" style="height: 38px; width: auto; display: block" />
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="../#about" data-en="About" data-ar="من أنا">About</a></li>
+          <li><a href="../#film" data-en="Film" data-ar="الفيلم">Film</a></li>
+          <li><a href="../#youtube-content" data-en="Videos" data-ar="فيديوهات">Videos</a></li>
+          <li><a href="./" aria-current="page" style="opacity: 1; color: var(--yellow)" data-en="Podcast" data-ar="البودكاست">Podcast</a></li>
+          <li><a href="../#hackathon" data-en="Hackathon" data-ar="هاكاثون">Hackathon</a></li>
+          <li><a href="../#mock-interviews" data-en="Mock Interviews" data-ar="مقابلات البرمجة">Mock Interviews</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-dropdown-toggle" data-en="Courses" data-ar="الكورسات">Courses</a>
+            <div class="nav-dropdown-menu">
+              <a href="../courses/ai-agents/" data-en="AI Agent Engineering" data-ar="هندسة وكلاء الذكاء الاصطناعي">AI Agent Engineering</a>
             </div>
-
-            <div class="course-video">
-                <h3 id="courseName"></h3>
-                <iframe id="videoPlayer" width="800" height="450" src="https://www.youtube.com/embed/2EAV2cB3FWY"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <div class="course-desc-container">
-                    <h2 id="videoTitle">المقدمة</h2>
-                    <div class="course-info">
-                        <p id="videoDescription"></p>
-                    </div>
-                </div>
-            </div>
+          </li>
+          <li><a href="../#contact" class="nav-cta" data-en="Contact Me" data-ar="تواصل معي">Contact Me</a></li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">AR</button>
         </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-        <script src="../js/footer.js"></script>
-        <script src="../js/courseScript.js"></script>
-        <script src="../js/poadcast.js"></script>
+    <main>
+      <!-- HERO -->
+      <section class="pc-hero">
+        <div class="pc-wrap pc-hero-inner">
+          <div>
+            <div class="pc-eyebrow" data-en="The Podcast" data-ar="البودكاست">The Podcast</div>
+            <h1>
+              <span data-en="Where Arab engineers" data-ar="حيث يحكي المهندسون">Where Arab engineers</span><br />
+              <em data-en="tell their story." data-ar="قصصهم الحقيقية.">tell their story.</em>
+            </h1>
+            <p class="pc-hero-ar" lang="ar">
+              <strong>تقني بحت</strong> — حوارات عربية مع مهندسين وخبراء عن التقنية والذكاء الاصطناعي والمسار المهني.
+            </p>
+            <p
+              class="pc-hero-desc"
+              data-en="Long-form conversations with the people building tech across the Arab world — careers, code, AI, startups and the unfiltered reality of working in this industry."
+              data-ar="حوارات معمّقة مع من يبنون التقنية في العالم العربي — عن المسيرة المهنية والكود والذكاء الاصطناعي والشركات الناشئة والواقع الحقيقي للعمل في هذه الصناعة."
+            >
+              Long-form conversations with the people building tech across the Arab world — careers, code, AI, startups and the unfiltered reality of working in this industry.
+            </p>
+            <div class="pc-platforms">
+              <a class="pc-platform primary" href="https://www.youtube.com/playlist?list=PLhzMa4IMmEUvEsQodODo0Tii8ug3j0Gac" target="_blank" rel="noopener" data-en="▶ Watch on YouTube" data-ar="▶ شاهد على يوتيوب">▶ Watch on YouTube</a>
+              <a class="pc-platform" href="https://open.spotify.com/show/0KXiNLus1U3dAD2GwnMATu" target="_blank" rel="noopener">Spotify</a>
+              <a class="pc-platform" href="https://podcasts.apple.com/us/podcast/تقني-بحت-مع-طارق-العوزة/id1771045340" target="_blank" rel="noopener">Apple Podcasts</a>
+              <a class="pc-platform" href="https://music.amazon.com/podcasts/69d7cb77-e4a9-440f-8c1e-4ea87b6359d1/تقني-بحت-مع-طارق-العوزة?referrer=https%3A%2F%2Fpodcast.tariqlabs.com%2F" target="_blank" rel="noopener">Amazon Music</a>
+              <a class="pc-platform" href="https://podcast.tariqlabs.com/" target="_blank" rel="noopener" data-en="All audio platforms" data-ar="كل منصات الاستماع">All audio platforms</a>
+            </div>
+            <div class="pc-stats">
+              <div>
+                <span class="pc-stat-num">35+</span>
+                <span class="pc-stat-lbl" data-en="Episodes" data-ar="حلقة">Episodes</span>
+              </div>
+              <div class="pc-stat-div"></div>
+              <div>
+                <span class="pc-stat-num" data-en="Arabic" data-ar="عربي">Arabic</span>
+                <span class="pc-stat-lbl" data-en="Language" data-ar="اللغة">Language</span>
+              </div>
+              <div class="pc-stat-div"></div>
+              <div>
+                <span class="pc-stat-num" data-en="Tech" data-ar="تقنية">Tech</span>
+                <span class="pc-stat-lbl" data-en="Category" data-ar="التصنيف">Category</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc-hero-logo">
+            <img src="../images/podcast-logo.png" alt="تقني بحت podcast logo" width="640" height="597" />
+          </div>
+        </div>
+      </section>
 
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-            function openmenu() {
-                sidemenu.style.right = "0px";
-            }
-            function closemenu() {
-                sidemenu.style.right = "-250px";
-            }
 
-        </script>
-        <script src="../js/scrollingControl.js"></script>
+      <!-- EPISODES -->
+      <section class="pc-section" id="episodes">
+        <div class="pc-wrap">
+          <div class="pc-eyebrow" data-en="Archive" data-ar="الأرشيف">Archive</div>
+          <h2 class="pc-h2" data-en="All episodes" data-ar="كل الحلقات">All episodes</h2>
+          <p class="pc-sub" data-en="Browse by topic or search by guest. Every episode opens right here — no leaving the page." data-ar="تصفّح حسب الموضوع أو ابحث باسم الضيف. كل حلقة تُشغَّل هنا مباشرة.">
+            Browse by topic or search by guest. Every episode opens right here — no leaving the page.
+          </p>
+          <div class="pc-toolbar">
+            <div class="pc-chips" id="pc-chips" role="group" aria-label="Topics"></div>
+            <input class="pc-search" id="pc-search" type="search" aria-label="Search episodes" />
+          </div>
+          <div class="pc-grid" id="pc-grid"></div>
+          <p class="pc-empty" id="pc-empty" data-en="No episodes match your search." data-ar="لا توجد حلقات مطابقة.">No episodes match your search.</p>
+          <noscript>
+            <p class="pc-more">
+              <a href="https://www.youtube.com/playlist?list=PLhzMa4IMmEUvEsQodODo0Tii8ug3j0Gac">Watch every episode on YouTube</a> ·
+              <a href="https://podcast.tariqlabs.com/">Listen to the audio version</a>
+            </p>
+          </noscript>
+          <p class="pc-more">
+            <span data-en="More episodes are on the way. The full archive lives on" data-ar="المزيد من الحلقات قادم. الأرشيف الكامل على">More episodes are on the way. The full archive lives on</span>
+            <a href="https://www.youtube.com/playlist?list=PLhzMa4IMmEUvEsQodODo0Tii8ug3j0Gac" target="_blank" rel="noopener">YouTube</a>.
+          </p>
+        </div>
+      </section>
 
-        <script>
+      <!-- HOST -->
+      <section class="pc-section">
+        <div class="pc-wrap">
+          <div class="pc-host">
+            <img src="../images/my-pic.jpg" alt="Tariq Elouzeh, host of تقني بحت" width="200" height="200" loading="lazy" />
+            <div>
+              <div class="pc-eyebrow" data-en="Your host" data-ar="مقدّم البودكاست">Your host</div>
+              <h2 class="pc-h2" data-en="Tariq Elouzeh" data-ar="طارق العوزة">Tariq Elouzeh</h2>
+              <p
+                data-en="Senior software engineer and content creator helping Arab developers level up through content, coaching and courses. I started تقني بحت to give the Arab tech community honest, in-depth conversations with people worth learning from."
+                data-ar="مهندس برمجيات ومنشئ محتوى أساعد المطورين العرب على التطور عبر المحتوى والتدريب والكورسات. بدأت تقني بحت ليحصل المجتمع التقني العربي على حوارات صادقة ومعمّقة مع أشخاص يستحقون أن نتعلم منهم."
+              >
+                Senior software engineer and content creator helping Arab developers level up through content, coaching and courses. I started تقني بحت to give the Arab tech community honest, in-depth conversations with people worth learning from.
+              </p>
+              <div class="pc-platforms">
+                <a class="pc-platform" href="https://www.youtube.com/@tariqelouzeh" target="_blank" rel="noopener">YouTube</a>
+                <a class="pc-platform" href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="pc-platform" href="https://www.instagram.com/tariqelouzeh/" target="_blank" rel="noopener">Instagram</a>
+                <a class="pc-platform" href="../" data-en="About Tariq →" data-ar="المزيد عني ←">About Tariq →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            document.querySelectorAll('.video-item h4').forEach(item => {
-                item.addEventListener('click', () => {
-                    // Remove blue color from all <h4> elements
-                    document.querySelectorAll('.video-item h4').forEach(el => el.style.color = '');
+      <!-- GUEST CTA -->
+      <section class="pc-section">
+        <div class="pc-wrap">
+          <div class="pc-cta">
+            <h2 class="pc-h2" data-en="Have a story worth telling?" data-ar="لديك قصة تستحق أن تُروى؟">Have a story worth telling?</h2>
+            <p class="pc-sub" data-en="If you're an Arab engineer, founder or researcher with something to teach, I'd love to hear from you." data-ar="إن كنت مهندساً أو مؤسساً أو باحثاً عربياً ولديك ما تعلّمه للآخرين، يسعدني التواصل معك.">
+              If you're an Arab engineer, founder or researcher with something to teach, I'd love to hear from you.
+            </p>
+            <a class="pc-platform primary" href="../#contact" data-en="Get in touch →" data-ar="تواصل معي ←">Get in touch →</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                    // Add blue color to the clicked element
-                    item.style.color = 'blue';
-                });
-            });
-        </script>
+    <footer class="pc-footer">
+      <span>&copy; 2026 Tariq Labs</span>
+      <span>Created with ♥ by <a href="https://www.linkedin.com/in/tariqelouzeh/" target="_blank" rel="noopener">@tariqelouzeh</a></span>
+    </footer>
 
-    </body>
+    <!-- VIDEO MODAL -->
+    <div class="pc-modal" id="pc-modal" role="dialog" aria-modal="true" aria-labelledby="pc-modal-title">
+      <div class="pc-modal-box">
+        <div class="pc-modal-frame" id="pc-modal-frame"></div>
+        <div class="pc-modal-bar">
+          <span class="pc-modal-title" id="pc-modal-title"></span>
+          <span style="display: flex; gap: 8px">
+            <a id="pc-modal-yt" href="#" target="_blank" rel="noopener" data-en="YouTube ↗" data-ar="يوتيوب ↗">YouTube ↗</a>
+            <button class="pc-modal-close" id="pc-modal-close" type="button" data-en="✕ Close" data-ar="✕ إغلاق">✕ Close</button>
+          </span>
+        </div>
+      </div>
+    </div>
 
-
+    <script src="../js/podcast-data.js?v=22"></script>
+    <script src="../js/podcast-page.js?v=22"></script>
+  </body>
 </html>
